@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="videos.css">
+</head>
+<body>
+    <script>
+        function showSidebar() {
+          var nav = document.querySelector('.menu');
+          if (nav.style.display == 'none') {
+            nav.style.display = 'block';
+          }
+          else {
+            nav.style.display = 'none';
+          }
+        }
+      </script>
+      <div class="navbar">
+        <div class="logo">
+          <img src="nature2.jpg" alt="Logo" class="logo-image">
+          <h1 class="logo-text">Catalog-Z</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <label for="click" class="menu-btn">
+            <i class='bx bx-menu' onclick="showSidebar()"></i>
+      </div>
+      </label>
+      </ul>
+      </div>
+      <ul class="menu">
+        <li><a href="">Photos</a></li>
+        <li><a href="">Videos</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <div class="background-image">
+        <div class="video-layer">
+            <video src="hero.mp4" controls style="height: 400px;width:100%;object-fit: cover;">
+                <source src="" type="video/mp4">
+            </video>
+
+            <div class="container-form">
+                <form action="" class="example" name="search">
+                    <input type="text" placeholder="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+ <h2>Latest Photos</h2>
+
+    <div class="image-box">
+      <div class="horizontal-image">
+        <img src="nature3.jpg" alt="Image 1" >
+      </div>
+      <div class="horizontal-image" >
+        <img src="nature4.jpg" alt="Image 2" >
+      </div>
+  
+      <div class="horizontal-image" >
+        <img src="nature5.jpg" alt="Image 3" >
+  
+      </div>
+      <div class="horizontal-image" >
+        <img src="nature6.jpg" alt="Image 4" >
+      </div>
+    </div>
+  
+    <div class="pagination-section">
+      <div class="pagination-previous">
+        <button type="submit">Previous</button>
+      </div>
+      <div class="pagination">
+        <button class="active"><a href="">1</a></button>
+        <button><a href="">2</a></button>
+        <button><a href="">3</a></button>
+        <button><a href="">4</a></button>
+      </div>
+      <div class="pagination-next">
+        <button type="submit">Next Page</button>
+      </div>
+    </div>
+    <footer class="footer-distributed">
+      <div class="about">
+        <h3>About Catalog-z</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium officia veniam cupiditate ab
+          voluptatibus fugiat temporibus sint laborum Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Rerum
+          sequi quo, omnis iure suscipit perspiciatis.
+        </p>
+      </div>
+      <div class="link">
+        <h3>Our Links</h3>
+        <a href="">Advertise</a>
+        <a href="">Support</a>
+        <a href="">Our Company</a>
+        <a href="">Contact</a>
+      </div>
+      <div class="logo">
+  
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-twitter'></i>
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-pinterest'></i>
+  
+      </div>
+  
+    </footer>
+</body>
+</html>
