@@ -96,6 +96,13 @@
         height:220px;
         width:100%;
     }
+    @media screen and (max-width:480px) {
+      .background-image img{
+        width:500px;
+        height: 300px;
+      }
+      
+    }
     h2{
       color: #009999;
       font-family: sans-serif;

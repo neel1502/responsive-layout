@@ -102,10 +102,14 @@
       float: left;
       background: #f1f1f1;
       margin-left: 520px;
+      top:50%;
+      left:0;
+      right:0;
+      margin:auto;
       color: rgb(0, 153, 153) !important;
       background-position: center;
-    }
-    form.example button {
+    } 
+     form.example button {
       float: left;
       width: 70px;
       height: 42px;
@@ -121,7 +125,7 @@
     }
     
     form.example button:hover {
-      background-color: #198754;
+      background-color: #117964
     }
     form.example::after {
       content: "";
@@ -130,7 +134,10 @@
     }
     video {
       display: flex;
-      margin-bottom: 50px;
+      /* margin-bottom: 50px; */
+      height:400px;
+      width:100%;
+      object-fit: cover;
     }
     .video-layer{
       position: relative;
@@ -142,18 +149,59 @@
      .container-form{
       position: absolute;
       top:50%;
-      left:30;
+      left:0;
+      right:0;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items:center ;
+    }
+    @media screen and (max-width:500px) {
+      video{
+        height:300px;
+        width:500px;
+      }
+      
     }
     .container-form input{
-      width: 360px;
-      padding: 12px 15px;
-    }
+         max-width: 30rem;
+         min-width: 20rem;
+      /* padding: 12px 15px; */
+     }
+     @media screen and (max-width:400px) {
+      .container-form input{
+        min-width: 15rem;
+       
+      }
+      
+     }
+     @media screen and (max-width:400px) {
+      .container-fom{
+        display: flex;
+        justify-content: center;
+      }
+      
+     }
+     @media screen and (max-width:450px) {
+      form.example input[type="text"]{
+        min-width: 15rem;
+      }
+      
+     }
+     /* @media screen and (max-width:360px) {
+      form.example input[type="text"]{
+             min-width:8rem;
+           
+      }
+      
+     } */
+     /*
     .container{
       display: inline-flex;
       width: 100%;
       height: 100%;
       margin-left: 25px;
-    }
+    } */
 
 h2{
     font-family: sans-serif;
@@ -189,6 +237,15 @@ h2{
   }
   
 }
+@media screen and (max-width:500px) {
+  .image-box{
+    display: flex;
+    /* position: fixed; */
+    justify-content: center;
+  }
+  
+}
+
   .pagination-section{
     display: flex;
     align-items: center;
