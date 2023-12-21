@@ -49,9 +49,11 @@
 }
 
 .menu-btn i {
+  font-size: 32px;
+  cursor: pointer;
   display: none;
-  left: 30%;
-  float: right;
+  color: rgb(153, 153, 153);
+
 }
 
 @media screen and (max-width:150px) {
@@ -61,24 +63,14 @@
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:991px) {
   .navbar .menu-btn i {
     display: block;
+    float: right;
   }
 }
 
-/* Media Query for responsive design */
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
-
-  .nav-links {
-    margin: 20px 0;
-  }
-}
-
-@media screen and (max-width:600px) {
+@media screen and (max-width:991px) {
   .nav-links a {
     display: none;
   }
@@ -89,15 +81,21 @@
   display: none;
   list-style: none;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 .menu a {
   text-decoration: none;
+  color: rgb(153, 153, 153);
+  font-size: 1.6rem;
+  line-height: 1.8;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:991px) {
   .menu {
     display: block;
+    width: 100%;
+    text-align: center;
   }
 
 }
@@ -210,44 +208,27 @@ video {
 h2 {
   font-family: sans-serif;
   color: #009999;
+  margin-left: 15px;
 }
 
 .image-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .horizontal-image {
   height: 200px;
   width: 350px;
+  margin: 5px;
+  padding: 5px;
 
-}
-
-.horizontal-image img {
-  width: 100%
 }
 
 .image-box img {
   height: 200px;
   width: 350px;
   object-fit: cover;
-}
-
-@media screen and (max-width:715px) {
-  .image-box {
-    display: flex;
-    justify-content: center;
-  }
-
-}
-
-@media screen and (max-width:500px) {
-  .image-box {
-    display: flex;
-    justify-content: center;
-  }
-
 }
 
 .pagination-section {
@@ -305,6 +286,8 @@ h2 {
 @media screen and (max-width:768px) {
   .pagination-section {
     display: block;
+    width: 100%;
+    text-align: center;
   }
 
 }

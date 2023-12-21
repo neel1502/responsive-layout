@@ -22,6 +22,8 @@
 .logo h1 {
   color: #009999;
   font-family: sans-serif;
+  font-size: 1.6rem;
+  display: inline;
 }
 
 .nav-links {
@@ -48,9 +50,11 @@
 }
 
 .menu-btn i {
+  font-size: 32px;
+  cursor: pointer;
   display: none;
-  left: 30%;
-  float: right;
+  color: rgb(153, 153, 153);
+
 }
 
 @media screen and (max-width:150px) {
@@ -60,24 +64,15 @@
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:991px) {
   .navbar .menu-btn i {
     display: block;
+    float: right;
   }
 }
 
-/* Media Query for responsive design */
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
 
-  .nav-links {
-    margin: 20px 0;
-  }
-}
-
-@media screen and (max-width:600px) {
+@media screen and (max-width:991px) {
   .nav-links a {
     display: none;
   }
@@ -88,15 +83,22 @@
   display: none;
   list-style: none;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 .menu a {
   text-decoration: none;
+  color: rgb(153, 153, 153);
+  font-size: 1.6rem;
+  line-height: 1.8;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:991px) {
   .menu {
+
     display: block;
+    width: 100%;
+    text-align: center;
   }
 
 }
@@ -106,10 +108,10 @@
   width: 100%;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:525px) {
   .background-image img {
     height: 220px;
-    width: auto;
+    width: 100%;
   }
 
 }
@@ -121,50 +123,35 @@
   font-family: sans-serif;
   font-size: 30px;
 }
-.form-control{
-  /* display: block; */
+
+.form-control {
   font-size: 1.2rem;
-  /* font-weight: 400; */
   line-height: 1.2;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  /* width:40%; */
   margin: 5px;
   padding: 5px;
- }
- 
-form{
+  color: #009999;
+}
+
+form {
   margin: 15px;
   padding: 15px;
 }
 
-.contact input {
-  color: #009999;
-  padding: 10px 20px;
-  width: 80%;
-  height: auto;
-}
+
 @media screen and (max-width:991px) {
+
   .contact input,
   .contact select,
-  .contact textarea{
+  .contact textarea {
     width: 100%;
     height: auto;
   }
-  
-}
-.contact select {
-  padding: 10px 20px;
-  width: 95%;
-  height: auto;
-  color: #009999;
-}
-.contact textarea {
-  color: #009999;
-  padding: 10px 20px;
 
-} 
+}
+
 
 .contact-button button {
   background-color: #009999;
@@ -183,7 +170,6 @@ form{
 
   display: flex;
   justify-content: space-between;
-  padding: 30px 25px;
 }
 
 .address-logo {
@@ -226,19 +212,20 @@ form{
 
 }
 
- @media screen and (max-width:525px) {
+@media screen and (max-width:525px) {
   iframe {
     height: 200px;
     width: 475px;
-  } 
- }
-  @media screen and (max-width:440px) {
-    iframe{
-      height: 150px;
-      width:390px;
-    }
-    
   }
+}
+
+@media screen and (max-width:440px) {
+  iframe {
+    height: 150px;
+    width: 390px;
+  }
+
+}
 
 
 .photo {
@@ -398,7 +385,7 @@ div h3 {
   background-color: #009999;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:575px) {
   .footer-distributed {
     flex-direction: column;
   }

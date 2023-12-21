@@ -49,9 +49,11 @@
 }
 
 .menu-btn i {
+  font-size: 32px;
+  cursor: pointer;
   display: none;
-  left: 30%;
-  float: right;
+  color: rgb(153, 153, 153);
+
 }
 
 @media screen and (max-width:150px) {
@@ -61,46 +63,49 @@
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:991px) {
   .navbar .menu-btn i {
     display: block;
+    float: right;
+
   }
 }
 
-/* Media Query for responsive design */
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
 
-  .nav-links {
-    margin: 20px 0;
-  }
-}
-
-@media screen and (max-width:600px) {
+@media screen and (max-width:991px) {
   .nav-links a {
     display: none;
   }
 
 }
 
+
 .menu {
   display: none;
   list-style: none;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 .menu a {
   text-decoration: none;
+  color: rgb(153, 153, 153);
+  margin: 5px;
+  padding: 5px;
+  font-size: 1.6rem;
+  line-height: 1.8;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:991px) {
   .menu {
     display: block;
+    width: 100%;
+    text-align: center;
+
   }
 
 }
+
 
 .input-wrapper input {
 
@@ -183,69 +188,35 @@ input[type="text"] {
   }
 }
 
-.menu-btn i {
-  top: 50%;
-  left: 50%;
-}
-
-
-
 h2 {
   font-family: sans-serif;
   color: #009999;
+  margin-left: 15px;
 }
 
 .image-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .horizontal-image {
   height: 200px;
   width: 350px;
-
+   margin: 5px;
+   padding: 5px;
 }
 
-.horizontal-image img {
-  width: 100%;
-}
 
 .image-box img {
   height: 200px;
   width: 350px;
   object-fit: cover;
-}
-
-.view {
-  display: flex;
-  justify-content: space-between;
-}
-
-span {
-  color: #999;
-
+  
 }
 
 
 
-.text-gray {
-  color: #999;
-}
-
-@media screen and (max-width:715px) {
-  .image-box {
-    display: flex;
-    justify-content: center;
-  }
-
-}
-
-@media screen and (max-width:715px) {
-  .view {
-    display: block;
-  }
-}
 
 .pagination-section {
   display: flex;
@@ -299,9 +270,11 @@ span {
   background-color: #117964;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .pagination-section {
     display: block;
+    width:100%;
+    text-align: center;
   }
 
 }
@@ -391,7 +364,7 @@ div h3 {
   background-color: #009999;
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:575px) {
   .footer-distributed {
     flex-direction: column;
   }

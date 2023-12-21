@@ -49,9 +49,11 @@
 }
 
 .menu-btn i {
+  font-size: 32px;
+  cursor: pointer;
   display: none;
-  left: 30%;
-  float: right;
+  color: rgb(153, 153, 153);
+
 }
 
 @media screen and (max-width:150px) {
@@ -61,24 +63,14 @@
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:991px) {
   .navbar .menu-btn i {
     display: block;
+    float: right;
   }
 }
 
-/* Media Query for responsive design */
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
-
-  .nav-links {
-    margin: 20px 0;
-  }
-}
-
-@media screen and (max-width:600px) {
+@media screen and (max-width:991px) {
   .nav-links a {
     display: none;
   }
@@ -89,15 +81,21 @@
   display: none;
   list-style: none;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 .menu a {
   text-decoration: none;
+  color: rgb(153, 153, 153);
+  font-size: 1.6rem;
+  line-height: 1.8;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:991px) {
   .menu {
     display: block;
+    width: 100%;
+    text-align: center;
   }
 
 }
@@ -195,7 +193,13 @@ h2 {
   .icon-description {
     display: block;
   }
-
+  .read-button{
+    display: flex;
+    justify-content: center;
+  }
+}
+.read-button{
+  padding: 30px 0px;
 }
 
 .read-button button {
@@ -203,9 +207,8 @@ h2 {
   background-color: #009999;
   cursor: pointer;
   padding: 12px 50px 14px;
-  align-items: center;
   border-radius: 5px;
-
+  font-size: 1.2rem;
 }
 
 div h3 {
@@ -300,7 +303,7 @@ div h3 {
   background-color: #009999;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:575px) {
   .footer-distributed {
     flex-direction: column;
   }
