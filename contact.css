@@ -116,7 +116,11 @@
 
 }
 
-
+.personal-info{
+  column-gap: 10px;
+  display: flex;
+   text-align: center;
+}
 
 .personal-info h2 {
   color: #009999;
@@ -133,13 +137,17 @@
   margin: 5px;
   padding: 5px;
   color: #009999;
+  width: -webkit-fill-available;
 }
 
 form {
   margin: 15px;
   padding: 15px;
 }
-
+ 
+.contact{
+  margin-left: 35px;
+}
 
 @media screen and (max-width:991px) {
 
@@ -176,10 +184,13 @@ form {
   font-family: sans-serif;
   color: rgb(153, 153, 153);
 }
-
+.address h2{
+  margin-left: 45px;
+}
 .address p {
   color: rgb(153, 153, 153);
   line-height: 1.8;
+  text-align: justify;
 }
 
 .address-logo i {
