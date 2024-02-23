@@ -11,6 +11,7 @@
 .logo {
   display: flex;
   align-items: center;
+  padding: 20px 0px;
 }
 
 .logo-image {
@@ -96,7 +97,7 @@
 @media screen and (max-width:991px) {
   .menu {
 
-    display: block;
+    display: none;
     width: 100%;
     text-align: center;
   }
@@ -106,20 +107,23 @@
 .background-image img {
   height: 220px;
   width: 100%;
+  object-fit: cover;
 }
 
-@media screen and (max-width:525px) {
+/* @media screen and (max-width:525px) {
   .background-image img {
     height: 220px;
     width: 100%;
   }
 
-}
+} */
 
 .personal-info{
-  column-gap: 10px;
+  /* column-gap: 10px; */
   display: flex;
    text-align: center;
+   width: 100%;
+
 }
 
 .personal-info h2 {
@@ -146,10 +150,11 @@ form {
 }
  
 .contact{
-  margin-left: 35px;
+  /* margin-left: 35px; */
+  width: 33%;
 }
 
-@media screen and (max-width:991px) {
+/* @media screen and (max-width:991px) {
 
   .contact input,
   .contact select,
@@ -158,7 +163,7 @@ form {
     height: auto;
   }
 
-}
+} */
 
 
 .contact-button button {
@@ -179,7 +184,9 @@ form {
   display: flex;
   justify-content: space-between;
 }
-
+.address{
+  width: 33%;
+}
 .address-logo {
   font-family: sans-serif;
   color: rgb(153, 153, 153);
@@ -193,6 +200,9 @@ form {
   text-align: justify;
 }
 
+.contact-info{
+  padding: 10px;
+}
 .address-logo i {
   display: block;
   margin: 5px;
@@ -209,20 +219,49 @@ form {
   display: block;
   color: rgb(153, 153, 153);
 }
-
+.location{
+  width: 33%;
+}
 .location h2 {
   color: #009999;
   font-family: sans-serif;
   font-size: 30px;
 }
+iframe{
+  width: 100%;
+  height: 300px;
+}
 
 @media screen and (max-width:991px) {
   .personal-info {
-    display: block;
+    display: block;    
+  }
+  .personal-info .contact{
+    width: 100%;
+  }
+  .personal-info .address{
+    width: 100%;
+  }
+  .personal-info .location{
+    width: 100%;
+  }
+  iframe{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
 }
-
+/* @media screen and (max-width:991px) {
+  .contact,
+  .address,
+  .location{
+    margin: auto;
+    width: 100%;
+  }
+  
+} */
+/* 
 @media screen and (max-width:525px) {
   iframe {
     height: 200px;
@@ -236,7 +275,7 @@ form {
     width: 390px;
   }
 
-}
+} */
 
 
 .photo {
@@ -299,6 +338,7 @@ form {
 .pic p {
   color: rgb(153, 153, 153);
   line-height: 1.8;
+  padding: 10px;
 }
 
 .logo i {
@@ -335,7 +375,7 @@ div h3 {
 }
 
 .footer-distributed {
-  background-color: #666665;
+  background-color: #181717;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -381,6 +421,7 @@ div h3 {
   margin: 10px;
   padding: 10px;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .footer-distributed .logo i:hover {

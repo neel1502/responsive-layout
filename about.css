@@ -4,6 +4,7 @@
 
 .navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
@@ -93,7 +94,7 @@
 
 @media screen and (max-width:991px) {
   .menu {
-    display: block;
+    display: none;
     width: 100%;
     text-align: center;
   }
@@ -103,12 +104,13 @@
 .background-image img {
   height: 220px;
   width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width:480px) {
-  .background-image img {
-    width: 500px;
-    height: 250px;
+  .about-pic img {
+    width: 100%;
+  
   }
 
 }
@@ -118,13 +120,15 @@ h2 {
   font-family: sans-serif;
 }
 
+
 .about {
   display: flex;
   justify-content: space-between;
 }
 
 .about-pic img {
-  height: 220px;
+  height:220px;
+  /* width: 100%; */
 
 }
 
@@ -132,11 +136,19 @@ h2 {
   color: rgb(153, 153, 153);
   font-family: sans-serif;
   line-height: 1.8;
+  padding: 18px;
 }
 
 @media screen and (max-width:768px) {
   .about {
     flex-direction: column;
+  }
+  .about-pic{
+    align-items: center;
+    margin: auto;
+  }
+  .logo-title{
+    text-align: center;
   }
 
 }
@@ -145,6 +157,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 
 .content-information .left {
@@ -187,6 +200,7 @@ h2 {
   color: rgb(153, 153, 153);
   line-height: 1.8;
   font-family: sans-serif;
+  padding: 10px;
 }
 
 @media screen and (max-width:768px) {
@@ -200,6 +214,7 @@ h2 {
 }
 .read-button{
   padding: 30px 0px;
+  text-align: center;
 }
 
 .read-button button {
@@ -209,6 +224,7 @@ h2 {
   padding: 12px 50px 14px;
   border-radius: 5px;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 div h3 {
@@ -243,7 +259,7 @@ div h3 {
 }
 
 .footer-distributed {
-  background-color: #666665;
+  background-color: #181717;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -288,6 +304,7 @@ div h3 {
   margin: 10px;
   padding: 10px;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .footer-distributed .logo i:hover {

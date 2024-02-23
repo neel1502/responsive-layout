@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   padding: 20px;
+  height: 100px;
 }
 
 .logo {
@@ -29,6 +30,7 @@
 .nav-links {
   list-style: none;
   margin-left: auto;
+  margin-top: 5px;
 }
 
 .nav-links li {
@@ -55,6 +57,7 @@
   cursor: pointer;
   display: none;
   color: rgb(153, 153, 153);
+  margin: 8px;
 
 }
 
@@ -95,15 +98,29 @@
 
 @media screen and (max-width:991px) {
   .menu {
-    display: block;
+    display: none;
     width: 100%;
     text-align: center;
   }
 
 }
 
-
-
+.example{
+  width: 40%;
+  margin: auto;
+}
+@media screen and (max-width:590px) {
+  .example{
+    width: 70%;
+  }
+  
+}
+@media screen and (max-width:400px) {
+  .example{
+    width: 96%;
+  }
+  
+}
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
@@ -122,7 +139,7 @@ form.example input[type=text] {
 form.example button {
   float: left;
   width: 70px;
-  height: 42px;
+  height: 47px;
   padding: 10px;
   background: rgb(0, 153, 153);
   color: white;
@@ -165,16 +182,15 @@ video {
   top: 50%;
   left: 0;
   right: 0;
-  margin: auto;
+  /* margin: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 @media screen and (max-width:500px) {
   video {
-    height: 300px;
-    width: 500px;
+    height: 300px; 
   }
 
 }
@@ -187,13 +203,12 @@ video {
 @media screen and (max-width:400px) {
   .container-form input {
     min-width: 15rem;
-
   }
 
 }
 
 @media screen and (max-width:400px) {
-  .container-fom {
+  .container-form {
     display: flex;
     justify-content: center;
   }
@@ -206,7 +221,9 @@ video {
   }
 
 }
-
+.tagname{
+  padding: 15px 0px;
+}
 h2 {
   /* font-family: sans-serif; */
   color: #009999;
@@ -215,22 +232,52 @@ h2 {
 
 .image-box {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .horizontal-image {
-  height: 200px;
-  width: 350px;
-  margin: 5px;
-  padding: 5px;
-
+  height: auto;
+  width: 24%;
+   margin: 5px;
+   padding: 5px;
 }
 
 .image-box img {
-  height: 200px;
-  width: 350px;
+  width: 100%;
   object-fit: cover;
+}
+@media screen and (max-width:991px) {
+  .horizontal-image {
+    width: 32%;
+  }
+  
+  
+}
+@media screen and (max-width:767px) {
+  .horizontal-image {
+    width: 48%;
+
+  }
+  
+  
+}
+@media screen and (max-width:545px) {
+  .horizontal-image {
+    width: 100%;
+  }
+  
+  
+}
+@media screen and (max-width:350px) {
+  .horizontal-image {
+    width: 100%;
+  }
+  
+  
+}
+.text{
+  display: flex;
+  justify-content: space-between;
 }
 
 .pagination-section {
@@ -263,7 +310,9 @@ h2 {
   padding: 5px;
 
 }
-
+button.active a{
+  color: #ffffff;
+}
 .pagination button:hover {
   background-color: #117964;
 }
@@ -317,7 +366,7 @@ div h3 {
 
 
 .footer-distributed {
-  background-color: #666665;
+  background-color: #181717;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -362,6 +411,7 @@ div h3 {
   margin: 10px;
   padding: 10px;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .footer-distributed .logo i:hover {
@@ -382,4 +432,62 @@ div h3 {
     flex-direction: column;
   }
 
+}
+
+
+
+figcaption{
+  display: flex;
+  justify-content: center;
+  align-items:center; 
+  opacity: 0;
+  color: black;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+figcaption h2{
+  opacity: 1;
+}
+
+figcaption a{
+  padding: 0px;
+}
+
+figcaption:hover{
+  opacity: 1;
+  color: #000000;
+  transition: opacity 0.55s ease-in;
+}
+
+figure.inside-image {
+  opacity: 1;
+}
+
+figure.inside-image:hover{
+  opacity: 0.7;
+  transition: opacity 0.55s;
+}
+
+.inside-image{
+  position: relative;
+  overflow: hidden;
+}
+.inside-image figcaption{
+  position: absolute;
+  top: 0;
+  /* left: 15; */
+  width: 77%;
+  height: 77%;
+  border: 1px solid black;
+}
+
+figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+figcaption h2{
+  color: black;
+  font-size: 32px;
 }

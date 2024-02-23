@@ -21,6 +21,7 @@
 
 }
 
+
 .logo h1 {
   color: #009999;
   /* font-family: sans-serif; */
@@ -58,31 +59,6 @@
   color: rgb(153, 153, 153);
 
 }
-
-@media screen and (max-width:150px) {
-  .logo {
-    flex-direction: column;
-  }
-
-}
-
-@media screen and (max-width:991px) {
-  .navbar .menu-btn i {
-    display: block;
-    float: right;
-
-  }
-}
-
-
-@media screen and (max-width:991px) {
-  .nav-links a {
-    display: none;
-  }
-
-}
-
-
 .menu {
   display: none;
   list-style: none;
@@ -99,15 +75,6 @@
   line-height: 1.8;
 }
 
-@media screen and (max-width:991px) {
-  .menu {
-    display: block;
-    width: 100%;
-    text-align: center;
-
-  }
-
-}
 
 
 .input-wrapper input {
@@ -125,7 +92,7 @@
 
 .center-field {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 0;
   right: 0;
   margin: auto;
@@ -140,6 +107,7 @@
   height: 220px;
   width: 100%;
   z-index: -1;
+  object-fit: cover;
 }
 
 @media screen and (max-width:350px) {
@@ -168,6 +136,8 @@
 
 .search-logo {
   background-color: #009999;
+  border: 1px solid #0b0a0a;
+  padding: 4px;
 
 }
 
@@ -190,7 +160,9 @@ input[type="text"] {
     font-size: 14px;
   }
 }
-
+.tagname{
+  padding: 15px;
+}
 h2 {
   /* font-family: sans-serif; */
   color: #009999;
@@ -199,31 +171,59 @@ h2 {
 
 .image-box {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .horizontal-image {
-  height: 200px;
-  width: 350px;
+  height: auto;
+  width: 24%;
    margin: 5px;
    padding: 5px;
 }
 
+@media screen and (max-width:767px) {
+  .horizontal-image {
+    width: 48%;
 
-.image-box img {
-  height: 200px;
-  width: 350px;
-  object-fit: cover;
+  }
+  
+  
+}
+@media screen and (max-width:545px) {
+  .horizontal-image {
+    width: 100%;
+  }
+  
+  
+}
+@media screen and (max-width:350px) {
+  .horizontal-image {
+    width: 100%;
+  }
+  
   
 }
 
 
+.image-box img {
+  /* height: 200px; */
+  width: 100%;
+  object-fit: cover;
+  
+}
 
+.text{
+  display: flex;
+  justify-content: space-between;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+}
 
 .pagination-section {
   display: flex;
-  align-items: center;
+  justify-content: center;
   padding: 30px 10px;
   justify-content: space-between;
 }
@@ -250,6 +250,9 @@ h2 {
   margin: 5px;
   padding: 5px;
 
+}
+button.active a{
+  color: #ffffff;
 }
 
 .pagination button:hover {
@@ -278,6 +281,7 @@ h2 {
     display: block;
     width:100%;
     text-align: center;
+    align-items: center;
   }
 
 }
@@ -305,7 +309,7 @@ div h3 {
 
 
 .footer-distributed {
-  background-color: #666665;
+  background-color: #181717;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -352,6 +356,7 @@ div h3 {
   margin: 10px;
   padding: 10px;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .footer-distributed .logo i:hover {
@@ -372,4 +377,84 @@ div h3 {
     flex-direction: column;
   }
 
+}
+
+
+
+
+
+figcaption{
+  display: flex;
+  justify-content: center;
+  align-items:center; 
+  opacity: 0;
+  color: black;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+figcaption h2{
+  opacity: 1;
+}
+
+figcaption a{
+  padding: 0px;
+}
+
+figcaption:hover{
+  opacity: 1;
+  color: #000000;
+  transition: opacity 0.55s ease-in;
+}
+
+figure.inside-image {
+  opacity: 1;
+}
+
+figure.inside-image:hover{
+  opacity: 0.7;
+  transition: opacity 0.55s;
+}
+
+.inside-image{
+  position: relative;
+  overflow: hidden;
+}
+
+.inside-image figcaption{
+  position: absolute;
+  top: 0;
+  /* left: 15; */
+  width: 77%;
+  height: 77%;
+  border: 1px solid black;
+}
+
+figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+figcaption h2{
+  color: black;
+  font-size: 32px;
+}
+
+@media screen and (max-width:991px) {
+  .navbar .menu-btn i {
+    display: block;
+    float: right;
+   }
+   .nav-links a {
+    display: none;
+  }
+  .menu {
+    display: none;
+    width: 100%;
+    text-align: center;
+
+  }
+  .horizontal-image {
+    width: 32%;
+  }
 }
